@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <!-- website favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- website favicon -->
+    <!-- daisyUI and tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI and tailwind cdn  -->
+    <!-- external css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- external css  -->
+
+</head>
+
+<body class="bg-[#F4F7FF] w-screen h-screen  pt-6 poppins">
+    <!-- header part  -->
+    <header class="container mx-auto bg-white rounded-2xl px-6 flex justify-between items-center mb-5">
+        <div class="nav-brands py-5">
+            <a href="#" class="poppins flex justify-start items-center text-3xl leading-9 tracking-[3%]"><img
+                    src="./assets/images/logo.png" alt="" srcset="" class="mr-2">Dev<span
+                    class="font-bold text-[#00303C]">Board</span></a>
+        </div>
+        <div class="nav-btn flex justify-end items-center">
+            <button class="btn bg-[#F4F7FF] rounded-[32px] border-none outline-none  hover:bg-[#F4F7FF]"><img
+                    src="./assets/images/checkbox.png" alt="" srcset=""><span
+                    class="nav-count text-3xl font-bold text-[#1E1E1E]" id="navAssign">23</span></button>
+            <button
+                class="btn bg-[#F4F7FF] rounded-full w-[64px] h-[64px] ml-[38px] border-none outline-none  hover:bg-[#F4F7FF]" id="themeColor"><img
+                    src="./assets/images/theme-btn.png" alt="" srcset=""></button>
+        </div>
+    </header>
+    <!-- header part  -->
+    <!-- main part  -->
+    <main class="container mx-auto  flex justify-between gap-6">
+        <!-- Main left content -->
+        <div class="main-content w-3/4 p-6 pb-8 rounded-2xl bg-white">
+            <div
+                class="main-top flex justify-between items-center gap-5 border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)]  w-full pb-6">
+                <!-- left content  -->
+                <div class="left-itmes w-1/4 bg-[#F4F7FF] flex justify-start items-center p-6 rounded-2xl">
+                    <div class="w-[64px] h-[64px] rounded-full bg-white flex justify-center items-center  mr-5 ">
+                        <img src="./assets/images/checkbox.png" alt="" srcset="">
+                    </div>
+                    <div class="left-content">
+                        <p class="text-[16px] font-medium text-[#00303C]">Task Assigned</p>
+                        <h1 class="text-[#00303C] text-[28px] font-bold" id="taskAssign">06</h1>
+                    </div>
+                </div>
+                <!-- left content  -->
+                <!-- middle itmes  -->
+                <div
+                    class="middle w-2/4  pl-10 py-6 pr-[120px] bg-[linear-gradient(90deg,_#3752FD_0%,_#6C7FFA_53%,_#9BA8F8_100%)] rounded-2xl flex justify-start items-center gap-5">
+                    <div class="">
+                        <img src="./assets/images/board.png" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <h1 class="text-2xl font-medium text-white tracking-[3%]">Discover Something New Today!</h1>
+                    </div>
+                </div>
+                <!-- middle itmes  -->
+                <!-- right content  -->
+                <div class="right-itmes w-1/4 bg-[#F4F7FF] flex justify-start items-center p-6 pr-0 rounded-2xl">
+                    <div class="w-[64px] h-[64px] rounded-full bg-white flex justify-center items-center  mr-5 ">
+                        <img src="./assets/images/calender.png" alt="" srcset="">
+                    </div>
+                    <div class="left-content">
+                        <p class="text-[22px] font-medium text-[#00303C]">Wed ,</p>
+                        <h1 class="text-[#00303C] text-[22px] font-bold">Jul 28 2025 </h1>
+                    </div>
+                </div>
+                <!-- right content  -->
+            </div>
+            <!-- card main part  -->
+            <div class="cards grid grid-cols-3 gap-9 mt-8">
+             <!-- card  -->
+             <div class="card bg-[#F4F7FF]  p-6">
+                <div class="card-top border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                    <p class="bg-white inline-block py-2 px-4 rounded-[8px] text-[16px] text-[#00303C]">ShopEase</p>
+                    <h1 class="text-2xl text-[#00303C] py-4 font-medium">Fix Mobile Button Issue</h1>
+
+                    <p
+                        class="bg-white p-4 h-[94px] rounded-xl text-[15px] text-[#000] poppins tracking-[3%] mb-[14px]">
+                        Debug using Chrome <br> DevTools, check for overlapping...</p>
+                </div>
+                <div class="card-bottom mt-[13px] flex justify-between items-center">
+                    <div class="card-bottom-left">
+                        <p class="text-[14px] text-[#00303C]">Deadline</p>
+                        <h1 class="text-[16px] font-medium tracking-[3%]">21 March 2025</h1>
+                    </div>
+                    <div class="card-bottom-right">
+                        <button
+                            class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white cardBtn">Completed</button>
+                    </div>
+                </div>
+            </div>
+             <!-- card  -->
+             <!-- card  -->
+             <div class="card bg-[#F4F7FF]  p-6">
+                <div class="card-top border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                    <p class="bg-white inline-block py-2 px-4 rounded-[8px] text-[16px] text-[#00303C]">CloudSync</p>
+                    <h1 class="text-2xl text-[#00303C] py-4 font-medium">Add Dark Mode</h1>
+
+                    <p
+                        class="bg-white p-4 h-[94px] rounded-xl text-[15px] text-[#000] poppins tracking-[3%] mb-[14px]">
+                        Store the user's preference in localStorage, update CSS vari...</p>
+                </div>
+                <div class="card-bottom mt-[13px] flex justify-between items-center">
+                    <div class="card-bottom-left">
+                        <p class="text-[14px] text-[#00303C]">Deadline</p>
+                        <h1 class="text-[16px] font-medium tracking-[3%]">21 March 2025</h1>
+                    </div>
+                    <div class="card-bottom-right">
+                        <button
+                            class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white cardBtn" >Completed</button>
+                    </div>
+                </div>
+            </div>
+             <!-- card  -->
+             <!-- card  -->
+             <div class="card bg-[#F4F7FF]  p-6">
+                <div class="card-top border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                    <p class="bg-white inline-block py-2 px-4 rounded-[8px] text-[16px] text-[#00303C]">SwiftPay</p>
+                    <h1 class="text-2xl text-[#00303C] py-4 font-medium">Optimize  Home page</h1>
+
+                    <p
+                        class="bg-white p-4 h-[94px] rounded-xl text-[15px] text-[#000] poppins tracking-[3%] mb-[14px]">
+                        Debug using Chrome <br> DevTools, check for overlapping...</p>
+                </div>
+                <div class="card-bottom mt-[13px] flex justify-between items-center">
+                    <div class="card-bottom-left">
+                        <p class="text-[14px] text-[#00303C]">Deadline</p>
+                        <h1 class="text-[16px] font-medium tracking-[3%]">21 March 2025</h1>
+                    </div>
+                    <div class="card-bottom-right">
+                        <button
+                            class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white cardBtn">Completed</button>
+                    </div>
+                </div>
+            </div>
+             <!-- card  -->
+             <!-- card  -->
+             <div class="card bg-[#F4F7FF]  p-6">
+                <div class="card-top border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                    <p class="bg-white inline-block py-2 px-4 rounded-[8px] text-[16px] text-[#00303C]">Meta</p>
+                    <h1 class="text-2xl text-[#00303C] py-4 font-medium">Add new emoji 🤲</h1>
+
+                    <p
+                        class="bg-white p-4 h-[94px] rounded-xl text-[15px] text-[#000] poppins tracking-[3%] mb-[14px]">
+                        Debug using Chrome <br> DevTools, check for overlapping...</p>
+                </div>
+                <div class="card-bottom mt-[13px] flex justify-between items-center">
+                    <div class="card-bottom-left">
+                        <p class="text-[14px] text-[#00303C]">Deadline</p>
+                        <h1 class="text-[16px] font-medium tracking-[3%]">21 March 2025</h1>
+                    </div>
+                    <div class="card-bottom-right">
+                        <button
+                            class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white cardBtn">Completed</button>
+                    </div>
+                </div>
+            </div>
+             <!-- card  -->
+             <!-- card  -->
+             <div class="card bg-[#F4F7FF]  p-6">
+                <div class="card-top border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                    <p class="bg-white inline-block py-2 px-4 rounded-[8px] text-[16px] text-[#00303C] cardBtn">Google LLC</p>
+                    <h1 class="text-2xl text-[#00303C] py-4 font-medium">Integrate OpenAI API</h1>
+
+                    <p
+                        class="bg-white p-4 h-[94px] rounded-xl text-[15px] text-[#000] poppins tracking-[3%] mb-[14px]">
+                        Debug using Chrome <br> DevTools, check for overlapping...</p>
+                </div>
+                <div class="card-bottom mt-[13px] flex justify-between items-center">
+                    <div class="card-bottom-left">
+                        <p class="text-[14px] text-[#00303C]">Deadline</p>
+                        <h1 class="text-[16px] font-medium tracking-[3%]">21 March 2025</h1>
+                    </div>
+                    <div class="card-bottom-right">
+                        <button
+                            class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white cardBtn ">Completed</button>
+                    </div>
+                </div>
+            </div>
+             <!-- card  -->
+             <!-- card  -->
+             <div class="card bg-[#F4F7FF]  p-6">
+                <div class="card-top border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                    <p class="bg-white inline-block py-2 px-4 rounded-[8px] text-[16px] text-[#00303C]">Glassdoar</p>
+                    <h1 class="text-2xl text-[#00303C] py-4 font-medium">Improve Job searching</h1>
+
+                    <p
+                        class="bg-white p-4 h-[94px] rounded-xl text-[15px] text-[#000] poppins tracking-[3%] mb-[14px]">
+                        Debug using Chrome <br> DevTools, check for overlapping...</p>
+                </div>
+                <div class="card-bottom mt-[13px] flex justify-between items-center">
+                    <div class="card-bottom-left">
+                        <p class="text-[14px] text-[#00303C]">Deadline</p>
+                        <h1 class="text-[16px] font-medium tracking-[3%]">21 March 2025</h1>
+                    </div>
+                    <div class="card-bottom-right">
+                        <button
+                            class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white cardBtn">Completed</button>
+                    </div>
+                </div>
+            </div>
+             <!-- card  -->
+            </div>
+            <!-- card main part  -->
+        </div>
+        <!-- Aside part -->
+        <aside class="aside w-1/4 bg-white rounded-2xl pt-4">
+                    <!-- aside top  -->
+                        <div class="asideTop border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full pb-4">
+                                <p class="text-center flex justify-center items-center text-xl font-medium text-[#00303C]"><img src="./assets/images/activity.png" alt="" srcset="" class="mr-4">Activity Log</p>
+
+                                <div class="asidebtn text-center mt-4">       <button
+                                    class="btn bg-[#3752FD] py-[10px] px-[20px] hover:bg-[#3752FD] text-white  ">Clear History</button></div>
+
+                        </div>
+                    <!-- aside top  -->
+        </aside>
+    </main>
+    <!-- main part  -->
+    <!-- custom js  -->
+    <script src="/js/custom.js"></script>
+    <!-- custom js  -->
+</body>
+
+</html>
