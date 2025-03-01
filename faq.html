@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <!-- website favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- website favicon -->
+    <!-- daisyUI and tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI and tailwind cdn  -->
+    <!-- external css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- external css  -->
+
+</head>
+
+<body class="bg-[#F4F7FF] pb-6 pt-6 poppins">
+    <!-- header part  -->
+    <header class="container mx-auto bg-white rounded-2xl px-6 flex justify-between items-center mb-5">
+        <div class="nav-brands py-5">
+            <a href="index.html" class="poppins flex justify-start items-center text-3xl leading-9 tracking-[3%]"><img
+                    src="./assets/images/logo.png" alt="" srcset="" class="mr-2">Dev<span
+                    class="font-bold text-[#00303C]">Board</span></a>
+        </div>
+        <div class="card-bottom-right">
+            <button
+                class="rounded-xl font-bold bg-[#5d5af8] text-xl py-[15px] px-[20px] hover:bg-[#5d5af8] text-white cardBtn"><a
+                    href="./index.html">Back To Desk</a></button>
+        </div>
+    </header>
+    <!-- header part  -->
+
+    <main class="container mx-auto ">
+        <h1 class="text-3xl font-bold text-center mb-4">Blogs</h1>
+        <div class="faq bg-white rounded-tl-xl rounded-tr-xl">
+            <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                <h1 class="p-4 text-2xl font-bold">What are the different ways to select an element in the DOM?</h1>
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-bold pb-2">Here are different ways to select an element in the DOM:</h3>
+                <ol>
+                    <li class="text-[16px] font-bold py-1">1. getElementById("id")</li>
+                    <li class="text-[16px] font-bold py-1">2. getElementsByClassName("class")</li>
+                    <li class="text-[16px] font-bold py-1">3. getElementsByTagName("tag")</li>
+                    <li class="text-[16px] font-bold py-1">4. querySelector("selector")</li>
+                    <li class="text-[16px] font-bold py-1">5. querySelectorAll("selector")</li>
+                </ol>
+            </div>
+        </div>
+        <div class="faq bg-white rounded-tl-xl rounded-tr-xl mt-6">
+            <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                <h1 class="p-4 text-2xl font-bold">What is the difference between innerHTML, innerText, and textContent ?</h1>
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-medium pb-2">Here are difference between innerHTML, innerText, and textContent</h3>
+                <ol>
+                    <li class="text-[16px] font-medium py-1">1. Use innerHTML when working with HTML markup within elements.</li>
+                    <li class="text-[16px] font-medium py-1">2. Use innerText to get or set the visible text, considering CSS styling.</li>
+                    <li class="text-[16px] font-medium py-1">3. Use textContent for a straightforward retrieval or assignment of text content, ignoring HTML tags and CSS styling.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="faq bg-white rounded-tl-xl rounded-tr-xl mt-6">
+            <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                <h1 class="p-4 text-2xl font-bold">What is event delegation in the DOM?</h1>
+            </div>
+            <div class="p-4">
+                <p class="text-[16px] font-medium  py-1">Event Delegation is a technique in JavaScript where a single event listener is added to a parent element to manage events for its child elements. This approach enhances performance and simplifies event management, especially when dealing with dynamic content.</p>
+            </div>
+        </div>
+        <div class="faq bg-white rounded-tl-xl rounded-tr-xl mt-6">
+            <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                <h1 class="p-4 text-2xl font-bold">What is event bubbling in the DOM?</h1>
+            </div>
+            <div class="p-4">
+                <p class="text-[16px] font-medium  py-1">Event bubbling is a DOM event flow where an event starts at the target element and bubbles up to its ancestors. For example, clicking a button inside a div will first trigger the button's click event, then the div's click event, and continue up the DOM hierarchy.</p>
+            </div>
+        </div>
+        <div class="faq bg-white rounded-tl-xl rounded-tr-xl mt-6">
+            <div class="border-b-2 border-dashed border-[rgba(55, 82, 253, 0.2)] w-full ">
+                <h1 class="p-4 text-2xl font-bold">How do you create, add, and remove elements using JavaScript?</h1>
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-medium pb-2">Create and remove elements in the DOM using the following methods:</h3>
+                <ol>
+                    <li class="text-[16px] font-medium py-1">1. document.createElement('div')</li>
+                    <li class="text-[16px] font-medium py-1">3. elementToRemove.remove();
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

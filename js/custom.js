@@ -25,7 +25,7 @@ const allBtns = document.querySelectorAll(".cardBtn");
 for (const btn of allBtns) {
   btn.addEventListener("click", function () {
     alert("Board updated successfully");
-      //  main js all btn
+    //  main js all btn
     const perClickValue = 1;
     const navberSelector = document.getElementById("navAssign");
     const navValue = parseInt(navberSelector.innerText);
@@ -81,11 +81,13 @@ for (const btn of allBtns) {
 }
 // main btn
 // aside clear btn
-const clearBtn = document.getElementById("clearBtn");
-clearBtn.addEventListener("click", function () {
+document.getElementById("clearBtn").addEventListener("click", function () {
   const allNewdivs = document.querySelectorAll(".newDive");
   for (const div of allNewdivs) {
     div.remove();
   }
 });
 // aside clear btn
+document.getElementById("btnLink").addEventListener("click", function () {
+  window.location.href = "faq.html";
+});
