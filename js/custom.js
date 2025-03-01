@@ -25,7 +25,7 @@ const allBtns = document.querySelectorAll(".cardBtn");
 for (const btn of allBtns) {
   btn.addEventListener("click", function () {
     alert("Board updated successfully");
-    //   start main js btn
+      //  main js all btn
     const perClickValue = 1;
     const navberSelector = document.getElementById("navAssign");
     const navValue = parseInt(navberSelector.innerText);
@@ -51,7 +51,7 @@ for (const btn of allBtns) {
 
     this.disabled = true;
 
-    //   end main js btn
+    //  main js all btn
     // aside page
 
     const asideContainer = document.querySelector(".aside-container");
@@ -85,7 +85,6 @@ const clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener("click", function () {
   const allNewdivs = document.querySelectorAll(".newDive");
   for (const div of allNewdivs) {
-    // div.style.display = "none";
     div.remove();
   }
 });
